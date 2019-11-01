@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Chats</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Chats;
+		--web-view-id: Chats;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Chats;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	#Chats {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 375px;
+		height: 812px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		--web-view-name: Chats;
+		--web-view-id: Chats;
+		--web-enable-deep-linking: true;
+	}
+	#bg_white_gray {
+		position: absolute;
+		width: 375px;
+		height: 812px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.bg {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 812px;
+		left: 0px;
+		top: 0px;
+	}
+	.bg_A11_Rectangle_219 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 247px;
+		left: 0px;
+		top: 565px;
+	}
+	#content {
+		position: absolute;
+		width: 375px;
+		height: 575px;
+		left: 0px;
+		top: 156px;
+		overflow: visible;
+	}
+	#rows {
+		position: absolute;
+		width: 375px;
+		height: 575px;
+		left: 0px;
+		top: 0px;
+		overflow: hidden;
+	}
+	#rows_0 {
+		position: absolute;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: -4px;
+		overflow: visible;
+	}
+	#row {
+		position: absolute;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.bg_A11_Rectangle_220 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 0px;
+	}
+	#Marie_Winter {
+		position: absolute;
+		left: 102px;
+		top: 22px;
+		overflow: visible;
+		width: 93px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(69,79,99,1);
+	}
+	#Happiness_is_not_something_rea {
+		position: absolute;
+		left: 102px;
+		top: 50px;
+		overflow: hidden;
+		width: 250px;
+		height: 36px;
+		line-height: 22px;
+		margin-top: -4px;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(120,132,158,1);
+	}
+	.divider {
+		position: absolute;
+		overflow: visible;
+		width: 327px;
+		height: 1px;
+		left: 24px;
+		top: 111px;
+	}
+	.avatar {
+		position: absolute;
+		overflow: visible;
+		width: 62px;
+		height: 62px;
+		left: 24px;
+		top: 24px;
+	}
+	#rows_1 {
+		position: absolute;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 108px;
+		overflow: visible;
+	}
+	#row_A11_Component_71 {
+		position: absolute;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.bg_A11_Rectangle_224 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 0px;
+	}
+	#full_name {
+		position: absolute;
+		left: 102px;
+		top: 22px;
+		overflow: visible;
+		width: 104px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(69,79,99,1);
+	}
+	#When_I_let_go_of_what_I_am__I_ {
+		position: absolute;
+		left: 102px;
+		top: 50px;
+		overflow: hidden;
+		width: 250px;
+		height: 36px;
+		line-height: 22px;
+		margin-top: -4px;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(120,132,158,1);
+	}
+	.divider_A11_Rectangle_225 {
+		position: absolute;
+		overflow: visible;
+		width: 327px;
+		height: 1px;
+		left: 24px;
+		top: 111px;
+	}
+	.avatar_A11_Rectangle_226 {
+		position: absolute;
+		overflow: visible;
+		width: 62px;
+		height: 62px;
+		left: 24px;
+		top: 24px;
+	}
+	#rows_2 {
+		position: absolute;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 220px;
+		overflow: visible;
+	}
+	#row_A11_Component_72 {
+		position: absolute;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.bg_A11_Rectangle_228 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 0px;
+	}
+	#full_name_A11_Text_137 {
+		position: absolute;
+		left: 102px;
+		top: 22px;
+		overflow: visible;
+		width: 102px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(69,79,99,1);
+	}
+	#If_you_re_offered_a_seat_on_a_ {
+		position: absolute;
+		left: 102px;
+		top: 50px;
+		overflow: hidden;
+		width: 250px;
+		height: 36px;
+		line-height: 22px;
+		margin-top: -4px;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(120,132,158,1);
+	}
+	.divider_A11_Rectangle_229 {
+		position: absolute;
+		overflow: visible;
+		width: 327px;
+		height: 1px;
+		left: 24px;
+		top: 111px;
+	}
+	.avatar_A11_Rectangle_230 {
+		position: absolute;
+		overflow: visible;
+		width: 62px;
+		height: 62px;
+		left: 24px;
+		top: 24px;
+	}
+	#rows_3 {
+		position: absolute;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 332px;
+		overflow: visible;
+	}
+	#row_A11_Component_73 {
+		position: absolute;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.bg_A11_Rectangle_232 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 0px;
+	}
+	#Marie_Winter_A11_Text_139 {
+		position: absolute;
+		left: 102px;
+		top: 22px;
+		overflow: visible;
+		width: 96px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(69,79,99,1);
+	}
+	#Happiness_is_not_something_rea_A11_Text_140 {
+		position: absolute;
+		left: 102px;
+		top: 50px;
+		overflow: hidden;
+		width: 250px;
+		height: 36px;
+		line-height: 22px;
+		margin-top: -4px;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(120,132,158,1);
+	}
+	.divider_A11_Rectangle_233 {
+		position: absolute;
+		overflow: visible;
+		width: 327px;
+		height: 1px;
+		left: 24px;
+		top: 111px;
+	}
+	.avatar_A11_Rectangle_234 {
+		position: absolute;
+		overflow: visible;
+		width: 62px;
+		height: 62px;
+		left: 24px;
+		top: 24px;
+	}
+	#rows_4 {
+		position: absolute;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 444px;
+		overflow: visible;
+	}
+	#row_A11_Component_74 {
+		position: absolute;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.bg_A11_Rectangle_236 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 0px;
+	}
+	#Marie_Winter_A11_Text_141 {
+		position: absolute;
+		left: 102px;
+		top: 22px;
+		overflow: visible;
+		width: 88px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(69,79,99,1);
+	}
+	#When_I_let_go_of_what_I_am__I__A11_Text_142 {
+		position: absolute;
+		left: 102px;
+		top: 50px;
+		overflow: hidden;
+		width: 250px;
+		height: 36px;
+		line-height: 22px;
+		margin-top: -4px;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(120,132,158,1);
+	}
+	.divider_A11_Rectangle_237 {
+		position: absolute;
+		overflow: visible;
+		width: 327px;
+		height: 1px;
+		left: 24px;
+		top: 111px;
+	}
+	.avatar_A11_Rectangle_238 {
+		position: absolute;
+		overflow: visible;
+		width: 62px;
+		height: 62px;
+		left: 24px;
+		top: 24px;
+	}
+	#rows_5 {
+		position: absolute;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 556px;
+		overflow: visible;
+	}
+	#row_A11_Component_75 {
+		position: absolute;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.bg_A11_Rectangle_240 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 112px;
+		left: 0px;
+		top: 0px;
+	}
+	#Marie_Winter_A11_Text_143 {
+		position: absolute;
+		left: 102px;
+		top: 22px;
+		overflow: visible;
+		width: 93px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(69,79,99,1);
+	}
+	#Happiness_is_not_something_rea_A11_Text_144 {
+		position: absolute;
+		left: 102px;
+		top: 50px;
+		overflow: hidden;
+		width: 250px;
+		height: 36px;
+		line-height: 22px;
+		margin-top: -4px;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(120,132,158,1);
+	}
+	.divider_A11_Rectangle_241 {
+		position: absolute;
+		overflow: visible;
+		width: 327px;
+		height: 1px;
+		left: 24px;
+		top: 111px;
+	}
+	.avatar_A11_Rectangle_242 {
+		position: absolute;
+		overflow: visible;
+		width: 62px;
+		height: 62px;
+		left: 24px;
+		top: 24px;
+	}
+	.badge {
+		position: absolute;
+		overflow: visible;
+		width: 8px;
+		height: 8px;
+		left: 343px;
+		top: 136px;
+	}
+	.badge_A11_Rectangle_245 {
+		position: absolute;
+		overflow: visible;
+		width: 8px;
+		height: 8px;
+		left: 343px;
+		top: 26px;
+	}
+	#bottom {
+		position: absolute;
+		width: 375px;
+		height: 92px;
+		left: 0px;
+		top: 720px;
+		overflow: visible;
+	}
+	#home_indicator_light {
+		position: absolute;
+		width: 375px;
+		height: 24px;
+		left: 0px;
+		top: 68px;
+		overflow: visible;
+	}
+	.bg_A11_Rectangle_246 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#indicator {
+		opacity: 0.5;
+	}
+	.indicator {
+		position: absolute;
+		overflow: visible;
+		width: 134px;
+		height: 3px;
+		left: 121px;
+		top: 12px;
+	}
+	#bg_A11_Rectangle_248 {
+		filter: drop-shadow(0px 12px 16px rgba(69, 91, 99, 0.102));
+	}
+	.bg_A11_Rectangle_248 {
+		position: absolute;
+		overflow: visible;
+		width: 100px;
+		height: 100px;
+		left: 307px;
+		top: 0px;
+	}
+	#icon_add_light {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 321px;
+		top: 14px;
+		overflow: visible;
+	}
+	.bg_A11_Rectangle_249 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	.union {
+		overflow: visible;
+		position: absolute;
+		top: 4px;
+		left: 4px;
+		width: 16px;
+		height: 16px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#top {
+		position: absolute;
+		width: 375px;
+		height: 156px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A11_Rectangle_250 {
+		opacity: 0;
+	}
+	.bg_A11_Rectangle_250 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 156px;
+		left: 0px;
+		top: 0px;
+	}
+	#Messages {
+		position: absolute;
+		left: 24px;
+		top: 84px;
+		overflow: visible;
+		width: 174px;
+		white-space: nowrap;
+		line-height: 44px;
+		margin-top: -2px;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(69,79,99,1);
+	}
+	#icons_search {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 327px;
+		top: 56px;
+		overflow: visible;
+	}
+	.bg_A11_Rectangle_251 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	.ico {
+		overflow: visible;
+		position: absolute;
+		top: 3px;
+		left: 3px;
+		width: 18px;
+		height: 18px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#icons_back {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 24px;
+		top: 56px;
+		overflow: visible;
+	}
+	.bg_A11_Rectangle_252 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#ico_A11_Group_223 {
+		position: absolute;
+		width: 16px;
+		height: 13.51px;
+		left: 5px;
+		top: 5.231px;
+		overflow: visible;
+	}
+	.union_A11_BooleanGroup_10 {
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 16px;
+		height: 13.51px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#status_bar_light {
+		position: absolute;
+		width: 340.328px;
+		height: 16px;
+		left: 20px;
+		top: 15px;
+		overflow: visible;
+	}
+	#status_bar_light_A11_Group_224 {
+		position: absolute;
+		width: 340.328px;
+		height: 16px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Background {
+		display: none;
+		overflow: visible;
+		position: absolute;
+		top: -15px;
+		left: -20px;
+		width: 375px;
+		height: 44px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Battery {
+		position: absolute;
+		width: 24.328px;
+		height: 11.333px;
+		left: 316px;
+		top: 2.333px;
+		overflow: visible;
+	}
+	#Border {
+		position: absolute;
+		width: 22px;
+		height: 11.333px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Cap {
+		position: absolute;
+		width: 1.328px;
+		height: 4px;
+		left: 23px;
+		top: 3.667px;
+		overflow: visible;
+	}
+	#Capacity {
+		position: absolute;
+		width: 18px;
+		height: 7.333px;
+		left: 2px;
+		top: 2px;
+		overflow: visible;
+	}
+	#Wifi {
+		position: absolute;
+		width: 15.272px;
+		height: 10.966px;
+		left: 295.694px;
+		top: 2.331px;
+		overflow: visible;
+	}
+	#Wifi_A11_Group_230 {
+		position: absolute;
+		width: 15.272px;
+		height: 10.966px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Cellular_Connection {
+		position: absolute;
+		width: 17px;
+		height: 10.667px;
+		left: 273.667px;
+		top: 2.667px;
+		overflow: visible;
+	}
+	#Cellular_Connection_A11_Group_232 {
+		position: absolute;
+		width: 17px;
+		height: 10.667px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Bars___Time_Black {
+		position: absolute;
+		width: 54px;
+		height: 16px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Background_A11_Path_125 {
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 54px;
+		height: 16px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.__Time {
+		overflow: visible;
+		position: absolute;
+		top: 4.89px;
+		left: 12.823px;
+		width: 27.451px;
+		height: 10.35px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+</style>
+</head>
+<body>
+<div id="Chats">
+	<div id="bg_white_gray" class="bg/white-gray">
+		<svg class="bg">
+			<rect fill="rgba(255,255,255,0)" id="bg" rx="0" ry="0" x="0" y="0" width="375" height="812">
+			</rect>
+		</svg>
+		<svg class="bg_A11_Rectangle_219">
+			<linearGradient id="LinearGradientFill1" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+				<stop offset="0" stop-color="#f7f7fa" stop-opacity="0"></stop>
+				<stop offset="1" stop-color="#f7f7fa" stop-opacity="1"></stop>
+			</linearGradient>
+			<rect fill="url(#LinearGradientFill1)" id="bg_A11_Rectangle_219" rx="0" ry="0" x="0" y="0" width="375" height="247">
+			</rect>
+		</svg>
+	</div>
+	<div id="content">
+		<div id="rows">
+			<div id="rows_0">
+				<div id="row" class="row">
+					<svg class="bg_A11_Rectangle_220">
+						<rect fill="transparent" id="bg_A11_Rectangle_220" rx="0" ry="0" x="0" y="0" width="375" height="112">
+						</rect>
+					</svg>
+					<div id="Marie_Winter">
+						<span>Marie Winter</span>
+					</div>
+					<div id="Happiness_is_not_something_rea">
+						<span>Happiness is not something readymade. <br/>It comes from your own actions.</span>
+					</div>
+					<svg class="divider">
+						<rect fill="rgba(244,244,246,0.992)" id="divider" rx="0.5" ry="0.5" x="0" y="0" width="327" height="1">
+						</rect>
+					</svg>
+					<svg class="avatar">
+						<pattern elementId="avatar_A11_Rectangle_223" id="avatar_A11_Rectangle_223_pattern" x="0" y="0" width="100%" height="100%">
+							<image x="0" y="0" width="100%" height="100%" href="avatar_A11_Rectangle_223_pattern.png" xlink:href="avatar_A11_Rectangle_223_pattern.png"></image>
+						</pattern>
+						<rect fill="url(#avatar_A11_Rectangle_223_pattern)" id="avatar" rx="12" ry="12" x="0" y="0" width="62" height="62">
+						</rect>
+					</svg>
+				</div>
+			</div>
+			<div id="rows_1">
+				<div id="row_A11_Component_71" class="row">
+					<svg class="bg_A11_Rectangle_224">
+						<rect fill="transparent" id="bg_A11_Rectangle_224" rx="0" ry="0" x="0" y="0" width="375" height="112">
+						</rect>
+					</svg>
+					<div id="full_name">
+						<span>Grant Marshall</span>
+					</div>
+					<div id="When_I_let_go_of_what_I_am__I_">
+						<span>When I let go of what I am, I become <br/>what I might be.</span>
+					</div>
+					<svg class="divider_A11_Rectangle_225">
+						<rect fill="rgba(244,244,246,0.992)" id="divider_A11_Rectangle_225" rx="0.5" ry="0.5" x="0" y="0" width="327" height="1">
+						</rect>
+					</svg>
+					<svg class="avatar_A11_Rectangle_226">
+						<pattern elementId="avatar_A11_Rectangle_227" id="avatar_A11_Rectangle_227_pattern" x="0" y="0" width="100%" height="100%">
+							<image x="0" y="0" width="100%" height="100%" href="avatar_A11_Rectangle_227_pattern.png" xlink:href="avatar_A11_Rectangle_227_pattern.png"></image>
+						</pattern>
+						<rect fill="url(#avatar_A11_Rectangle_227_pattern)" id="avatar_A11_Rectangle_226" rx="12" ry="12" x="0" y="0" width="62" height="62">
+						</rect>
+					</svg>
+				</div>
+			</div>
+			<div id="rows_2">
+				<div id="row_A11_Component_72" class="row">
+					<svg class="bg_A11_Rectangle_228">
+						<rect fill="transparent" id="bg_A11_Rectangle_228" rx="0" ry="0" x="0" y="0" width="375" height="112">
+						</rect>
+					</svg>
+					<div id="full_name_A11_Text_137">
+						<span>Duran Clayton</span>
+					</div>
+					<div id="If_you_re_offered_a_seat_on_a_">
+						<span>If you’re offered a seat on a rocket ship, <br/>don’t ask what seat! Just get on. </span>
+					</div>
+					<svg class="divider_A11_Rectangle_229">
+						<rect fill="rgba(244,244,246,0.992)" id="divider_A11_Rectangle_229" rx="0.5" ry="0.5" x="0" y="0" width="327" height="1">
+						</rect>
+					</svg>
+					<svg class="avatar_A11_Rectangle_230">
+						<pattern elementId="avatar_A11_Rectangle_231" id="avatar_A11_Rectangle_231_pattern" x="0" y="0" width="100%" height="100%">
+							<image x="0" y="0" width="100%" height="100%" href="avatar_A11_Rectangle_231_pattern.png" xlink:href="avatar_A11_Rectangle_231_pattern.png"></image>
+						</pattern>
+						<rect fill="url(#avatar_A11_Rectangle_231_pattern)" id="avatar_A11_Rectangle_230" rx="12" ry="12" x="0" y="0" width="62" height="62">
+						</rect>
+					</svg>
+				</div>
+			</div>
+			<div id="rows_3">
+				<div id="row_A11_Component_73" class="row">
+					<svg class="bg_A11_Rectangle_232">
+						<rect fill="transparent" id="bg_A11_Rectangle_232" rx="0" ry="0" x="0" y="0" width="375" height="112">
+						</rect>
+					</svg>
+					<div id="Marie_Winter_A11_Text_139">
+						<span>Julia Petersen</span>
+					</div>
+					<div id="Happiness_is_not_something_rea_A11_Text_140">
+						<span>Happiness is not something readymade. <br/>It comes from your own actions.</span>
+					</div>
+					<svg class="divider_A11_Rectangle_233">
+						<rect fill="rgba(244,244,246,0.992)" id="divider_A11_Rectangle_233" rx="0.5" ry="0.5" x="0" y="0" width="327" height="1">
+						</rect>
+					</svg>
+					<svg class="avatar_A11_Rectangle_234">
+						<pattern elementId="avatar_A11_Rectangle_235" id="avatar_A11_Rectangle_235_pattern" x="0" y="0" width="100%" height="100%">
+							<image x="0" y="0" width="100%" height="100%" href="avatar_A11_Rectangle_235_pattern.png" xlink:href="avatar_A11_Rectangle_235_pattern.png"></image>
+						</pattern>
+						<rect fill="url(#avatar_A11_Rectangle_235_pattern)" id="avatar_A11_Rectangle_234" rx="12" ry="12" x="0" y="0" width="62" height="62">
+						</rect>
+					</svg>
+				</div>
+			</div>
+			<div id="rows_4">
+				<div id="row_A11_Component_74" class="row">
+					<svg class="bg_A11_Rectangle_236">
+						<rect fill="transparent" id="bg_A11_Rectangle_236" rx="0" ry="0" x="0" y="0" width="375" height="112">
+						</rect>
+					</svg>
+					<div id="Marie_Winter_A11_Text_141">
+						<span>Burns Marks</span>
+					</div>
+					<div id="When_I_let_go_of_what_I_am__I__A11_Text_142">
+						<span>When I let go of what I am, I become <br/>what I might be.</span>
+					</div>
+					<svg class="divider_A11_Rectangle_237">
+						<rect fill="rgba(244,244,246,0.992)" id="divider_A11_Rectangle_237" rx="0.5" ry="0.5" x="0" y="0" width="327" height="1">
+						</rect>
+					</svg>
+					<svg class="avatar_A11_Rectangle_238">
+						<pattern elementId="avatar_A11_Rectangle_239" id="avatar_A11_Rectangle_239_pattern" x="0" y="0" width="100%" height="100%">
+							<image x="0" y="0" width="100%" height="100%" href="avatar_A11_Rectangle_239_pattern.png" xlink:href="avatar_A11_Rectangle_239_pattern.png"></image>
+						</pattern>
+						<rect fill="url(#avatar_A11_Rectangle_239_pattern)" id="avatar_A11_Rectangle_238" rx="12" ry="12" x="0" y="0" width="62" height="62">
+						</rect>
+					</svg>
+				</div>
+			</div>
+			<div id="rows_5">
+				<div id="row_A11_Component_75" class="row">
+					<svg class="bg_A11_Rectangle_240">
+						<rect fill="transparent" id="bg_A11_Rectangle_240" rx="0" ry="0" x="0" y="0" width="375" height="112">
+						</rect>
+					</svg>
+					<div id="Marie_Winter_A11_Text_143">
+						<span>Marie Winter</span>
+					</div>
+					<div id="Happiness_is_not_something_rea_A11_Text_144">
+						<span>Happiness is not something readymade. <br/>It comes from your own actions.</span>
+					</div>
+					<svg class="divider_A11_Rectangle_241">
+						<rect fill="rgba(244,244,246,0.992)" id="divider_A11_Rectangle_241" rx="0.5" ry="0.5" x="0" y="0" width="327" height="1">
+						</rect>
+					</svg>
+					<svg class="avatar_A11_Rectangle_242">
+						<pattern elementId="avatar_A11_Rectangle_243" id="avatar_A11_Rectangle_243_pattern" x="0" y="0" width="100%" height="100%">
+							<image x="0" y="0" width="100%" height="100%" href="avatar_A11_Rectangle_243_pattern.png" xlink:href="avatar_A11_Rectangle_243_pattern.png"></image>
+						</pattern>
+						<rect fill="url(#avatar_A11_Rectangle_243_pattern)" id="avatar_A11_Rectangle_242" rx="12" ry="12" x="0" y="0" width="62" height="62">
+						</rect>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<svg class="badge">
+			<rect fill="rgba(255,79,154,1)" id="badge" rx="4" ry="4" x="0" y="0" width="8" height="8">
+			</rect>
+		</svg>
+		<svg class="badge_A11_Rectangle_245">
+			<rect fill="rgba(255,79,154,1)" id="badge_A11_Rectangle_245" rx="4" ry="4" x="0" y="0" width="8" height="8">
+			</rect>
+		</svg>
+	</div>
+	<div id="bottom">
+		<div id="home_indicator_light">
+			<svg class="bg_A11_Rectangle_246">
+				<rect fill="transparent" id="bg_A11_Rectangle_246" rx="0" ry="0" x="0" y="0" width="375" height="24">
+				</rect>
+			</svg>
+			<svg class="indicator">
+				<rect fill="rgba(85,88,105,1)" id="indicator" rx="1" ry="1" x="0" y="0" width="134" height="3">
+				</rect>
+			</svg>
+		</div>
+		<svg class="bg_A11_Rectangle_248">
+			<rect fill="rgba(87,115,255,1)" id="bg_A11_Rectangle_248" rx="12" ry="12" x="0" y="0" width="52" height="52">
+			</rect>
+		</svg>
+		<div id="icon_add_light" class="icon/add/light">
+			<svg class="bg_A11_Rectangle_249">
+				<rect fill="transparent" id="bg_A11_Rectangle_249" rx="0" ry="0" x="0" y="0" width="24" height="24">
+				</rect>
+			</svg>
+			<svg class="union" viewBox="1477 658.15 16 16">
+				<path fill="rgba(255,255,255,1)" id="union" d="M 1484.250366210938 673.3998413085938 L 1484.250366210938 666.9000244140625 L 1477.749633789063 666.9000244140625 C 1477.335693359375 666.9000244140625 1476.999877929688 666.5643310546875 1476.999877929688 666.1503295898438 C 1476.999877929688 665.7354125976563 1477.335693359375 665.3997192382813 1477.749633789063 665.3997192382813 L 1484.250366210938 665.3997192382813 L 1484.250366210938 658.89990234375 C 1484.250366210938 658.4859008789063 1484.586059570313 658.1502075195313 1485 658.1502075195313 C 1485.4140625 658.1502075195313 1485.749755859375 658.4859008789063 1485.749755859375 658.89990234375 L 1485.749755859375 665.3997192382813 L 1492.25048828125 665.3997192382813 C 1492.664428710938 665.3997192382813 1493.000122070313 665.7354125976563 1493.000122070313 666.1503295898438 C 1493.000122070313 666.5643310546875 1492.664428710938 666.9000244140625 1492.25048828125 666.9000244140625 L 1485.749755859375 666.9000244140625 L 1485.749755859375 673.3998413085938 C 1485.749755859375 673.8138427734375 1485.4140625 674.150390625 1485 674.150390625 C 1484.586059570313 674.150390625 1484.250366210938 673.8138427734375 1484.250366210938 673.3998413085938 Z">
+				</path>
+			</svg>
+		</div>
+	</div>
+	<div id="top">
+		<svg class="bg_A11_Rectangle_250">
+			<rect fill="rgba(255,255,255,1)" id="bg_A11_Rectangle_250" rx="0" ry="0" x="0" y="0" width="375" height="156">
+			</rect>
+		</svg>
+		<div id="Messages">
+			<span>Messages</span>
+		</div>
+		<div id="icons_search" class="icons/search">
+			<svg class="bg_A11_Rectangle_251">
+				<rect fill="rgba(52,151,253,0)" id="bg_A11_Rectangle_251" rx="0" ry="0" x="0" y="0" width="24" height="24">
+				</rect>
+			</svg>
+			<svg class="ico" viewBox="2 2 18 18">
+				<path fill="rgba(69,79,99,1)" id="ico" d="M 15.11700820922852 13.95992565155029 L 19.7603588104248 18.60327529907227 C 20.07987976074219 18.92279815673828 20.07987976074219 19.44083976745605 19.7603588104248 19.7603588104248 C 19.44083976745605 20.07987976074219 18.92279815673828 20.07987976074219 18.60327529907227 19.7603588104248 L 13.95992565155029 15.11700820922852 C 12.7001953125 16.12470436096191 11.10228538513184 16.72727203369141 9.36363697052002 16.72727203369141 C 5.296812057495117 16.72727203369141 2 13.43046188354492 2 9.36363697052002 C 2 5.296812057495117 5.296812057495117 2 9.36363697052002 2 C 13.43046188354492 2 16.72727203369141 5.296812057495117 16.72727203369141 9.36363697052002 C 16.72727203369141 11.10228538513184 16.12470436096191 12.7001953125 15.11700820922852 13.95992565155029 L 15.11700820922852 13.95992565155029 Z M 9.36363697052002 15.09090995788574 C 12.52672386169434 15.09090995788574 15.09090995788574 12.52672386169434 15.09090995788574 9.36363697052002 C 15.09090995788574 6.200551509857178 12.52672386169434 3.63636326789856 9.36363697052002 3.63636326789856 C 6.200551509857178 3.63636326789856 3.63636326789856 6.200551509857178 3.63636326789856 9.36363697052002 C 3.63636326789856 12.52672386169434 6.200551509857178 15.09090995788574 9.36363697052002 15.09090995788574 Z">
+				</path>
+			</svg>
+		</div>
+		<div id="icons_back" class="icons/back">
+			<svg class="bg_A11_Rectangle_252">
+				<rect fill="transparent" id="bg_A11_Rectangle_252" rx="0" ry="0" x="0" y="0" width="24" height="24">
+				</rect>
+			</svg>
+			<div id="ico_A11_Group_223">
+				<svg class="union_A11_BooleanGroup_10" viewBox="1591.3 -17.689 16 13.51">
+					<path fill="rgba(69,79,99,1)" id="union_A11_BooleanGroup_10" d="M 1597.54052734375 -4.398300170898438 L 1591.66162109375 -10.27815341949463 C 1591.44482421875 -10.40956783294678 1591.299926757813 -10.64773464202881 1591.299926757813 -10.91970062255859 C 1591.299926757813 -11.0578145980835 1591.337158203125 -11.18709850311279 1591.402099609375 -11.29819774627686 C 1591.435546875 -11.3597240447998 1591.478271484375 -11.41757774353027 1591.530395507813 -11.46960067749023 C 1591.55517578125 -11.49447441101074 1591.581298828125 -11.51720523834229 1591.608520507813 -11.53786087036133 L 1597.54052734375 -17.46990013122559 C 1597.833984375 -17.76239967346191 1598.308227539063 -17.76239967346191 1598.601684570313 -17.46990013122559 C 1598.894165039063 -17.17650032043457 1598.894165039063 -16.70219993591309 1598.601684570313 -16.40880012512207 L 1593.862426757813 -11.67030048370361 L 1606.550415039063 -11.67030048370361 C 1606.964477539063 -11.67030048370361 1607.300170898438 -11.3346004486084 1607.300170898438 -10.91970062255859 C 1607.300170898438 -10.50570011138916 1606.964477539063 -10.17000007629395 1606.550415039063 -10.17000007629395 L 1593.890380859375 -10.17000007629395 L 1598.601684570313 -5.459400177001953 C 1598.894165039063 -5.165999889373779 1598.894165039063 -4.691699981689453 1598.601684570313 -4.398300170898438 C 1598.454956054688 -4.252049922943115 1598.263061523438 -4.178925037384033 1598.071044921875 -4.178925037384033 C 1597.879150390625 -4.178925037384033 1597.687255859375 -4.252049922943115 1597.54052734375 -4.398300170898438 Z">
+					</path>
+				</svg>
+			</div>
+		</div>
+		<div id="status_bar_light" class="status bar/light">
+			<div id="status_bar_light_A11_Group_224">
+				<svg class="Background" viewBox="0 -44 375 44">
+					<path fill="rgba(255,255,255,1)" id="Background" d="M 0 -44 L 375 -44 L 375 0 L 0 0 L 0 -44 Z">
+					</path>
+				</svg>
+				<div id="Battery">
+					<div id="Border">
+					<svg style="width:inherit;height:inherit;overflow:visible;">
+						<rect fill="url(#Border_A11_Group_234_pattern)" width="100%" height="100%"></rect>
+							<pattern elementId="Border_A11_Group_234" id="Border_A11_Group_234_pattern" x="0" y="0" width="100%" height="100%">
+								<image x="0" y="0" width="100%" height="100%" href="Border_A11_Group_234_pattern.png" xlink:href="Border_A11_Group_234_pattern.png"></image>
+							</pattern>
+							</svg>
+						</div>
+					<div id="Cap">
+					<svg style="width:inherit;height:inherit;overflow:visible;">
+						<rect fill="url(#Cap_A11_Group_235_pattern)" width="100%" height="100%"></rect>
+							<pattern elementId="Cap_A11_Group_235" id="Cap_A11_Group_235_pattern" x="0" y="0" width="100%" height="100%">
+								<image x="0" y="0" width="100%" height="100%" href="Cap_A11_Group_235_pattern.png" xlink:href="Cap_A11_Group_235_pattern.png"></image>
+							</pattern>
+							</svg>
+						</div>
+					<div id="Capacity">
+					<svg style="width:inherit;height:inherit;overflow:visible;">
+						<rect fill="url(#Capacity_A11_Group_236_pattern)" width="100%" height="100%"></rect>
+							<pattern elementId="Capacity_A11_Group_236" id="Capacity_A11_Group_236_pattern" x="0" y="0" width="100%" height="100%">
+								<image x="0" y="0" width="100%" height="100%" href="Capacity_A11_Group_236_pattern.png" xlink:href="Capacity_A11_Group_236_pattern.png"></image>
+							</pattern>
+							</svg>
+						</div>
+				</div>
+				<div id="Wifi">
+					<div id="Wifi_A11_Group_230">
+					<svg style="width:inherit;height:inherit;overflow:visible;">
+						<rect fill="url(#Wifi_A11_Group_237_pattern)" width="100%" height="100%"></rect>
+							<pattern elementId="Wifi_A11_Group_237" id="Wifi_A11_Group_237_pattern" x="0" y="0" width="100%" height="100%">
+								<image x="0" y="0" width="100%" height="100%" href="Wifi_A11_Group_237_pattern.png" xlink:href="Wifi_A11_Group_237_pattern.png"></image>
+							</pattern>
+							</svg>
+						</div>
+				</div>
+				<div id="Cellular_Connection">
+					<div id="Cellular_Connection_A11_Group_232">
+					<svg style="width:inherit;height:inherit;overflow:visible;">
+						<rect fill="url(#Cellular_Connection_A11_Group_238_pattern)" width="100%" height="100%"></rect>
+							<pattern elementId="Cellular_Connection_A11_Group_238" id="Cellular_Connection_A11_Group_238_pattern" x="0" y="0" width="100%" height="100%">
+								<image x="0" y="0" width="100%" height="100%" href="Cellular_Connection_A11_Group_238_pattern.png" xlink:href="Cellular_Connection_A11_Group_238_pattern.png"></image>
+							</pattern>
+							</svg>
+						</div>
+				</div>
+				<div id="Bars___Time_Black">
+					<svg class="Background_A11_Path_125" viewBox="21 -35 54 16">
+						<path fill="rgba(0,0,0,0)" id="Background_A11_Path_125" d="M 21 -19 L 75 -19 L 75 -35 L 21 -35 L 21 -19 Z">
+						</path>
+					</svg>
+					<svg class="__Time" viewBox="12.823 2.89 27.451 10.35">
+						<path fill="rgba(0,0,0,1)" id="__Time" d="M 16.43259620666504 13.2392578125 C 18.94138526916504 13.2392578125 20.43161964416504 11.27734375 20.43161964416504 7.955078125 C 20.43161964416504 6.7041015625 20.19236183166504 5.6513671875 19.73435401916504 4.837890625 C 19.07126808166504 3.5732421875 17.92966651916504 2.8896484375 16.48728370666504 2.8896484375 C 14.34079933166504 2.8896484375 12.82322120666504 4.33203125 12.82322120666504 6.35546875 C 12.82322120666504 8.255859375 14.19040870666504 9.63671875 16.07029151916504 9.63671875 C 17.22556495666504 9.63671875 18.16208839416504 9.0966796875 18.62693214416504 8.16015625 L 18.64743995666504 8.16015625 C 18.64743995666504 8.16015625 18.67478370666504 8.16015625 18.68161964416504 8.16015625 C 18.69529151916504 8.16015625 18.74314308166504 8.16015625 18.74314308166504 8.16015625 C 18.74314308166504 10.416015625 17.88865089416504 11.7626953125 16.44626808166504 11.7626953125 C 15.59861183166504 11.7626953125 14.94236183166504 11.2978515625 14.71677589416504 10.552734375 L 12.95993995666504 10.552734375 C 13.25388526916504 12.1728515625 14.62790870666504 13.2392578125 16.43259620666504 13.2392578125 Z M 16.49411964416504 8.2353515625 C 15.35935401916504 8.2353515625 14.55271339416504 7.4287109375 14.55271339416504 6.30078125 C 14.55271339416504 5.2001953125 15.40036964416504 4.359375 16.50095558166504 4.359375 C 17.60154151916504 4.359375 18.44919776916504 5.2138671875 18.44919776916504 6.328125 C 18.44919776916504 7.4287109375 17.62204933166504 8.2353515625 16.49411964416504 8.2353515625 Z M 23.53221893310547 11.9541015625 C 24.18163299560547 11.9541015625 24.62596893310547 11.4892578125 24.62596893310547 10.8740234375 C 24.62596893310547 10.251953125 24.18163299560547 9.7939453125 23.53221893310547 9.7939453125 C 22.88964080810547 9.7939453125 22.43846893310547 10.251953125 22.43846893310547 10.8740234375 C 22.43846893310547 11.4892578125 22.88964080810547 11.9541015625 23.53221893310547 11.9541015625 Z M 23.53221893310547 6.8271484375 C 24.18163299560547 6.8271484375 24.62596893310547 6.369140625 24.62596893310547 5.75390625 C 24.62596893310547 5.1318359375 24.18163299560547 4.673828125 23.53221893310547 4.673828125 C 22.88964080810547 4.673828125 22.43846893310547 5.1318359375 22.43846893310547 5.75390625 C 22.43846893310547 6.369140625 22.88964080810547 6.8271484375 23.53221893310547 6.8271484375 Z M 31.44532012939453 13 L 33.13379669189453 13 L 33.13379669189453 11.1611328125 L 34.46680450439453 11.1611328125 L 34.46680450439453 9.6708984375 L 33.13379669189453 9.6708984375 L 33.13379669189453 3.1357421875 L 30.64551544189453 3.1357421875 C 28.90235137939453 5.7607421875 27.51465606689453 7.955078125 26.62598419189453 9.5888671875 L 26.62598419189453 11.1611328125 L 31.44532012939453 11.1611328125 L 31.44532012939453 13 Z M 28.25977325439453 9.609375 C 29.40821075439453 7.5859375 30.43360137939453 5.9658203125 31.37696075439453 4.5712890625 L 31.47266387939453 4.5712890625 L 31.47266387939453 9.7119140625 L 28.25977325439453 9.7119140625 L 28.25977325439453 9.609375 Z M 38.51076507568359 13 L 40.27443695068359 13 L 40.27443695068359 3.1357421875 L 38.51760101318359 3.1357421875 L 35.94045257568359 4.9404296875 L 35.94045257568359 6.6357421875 L 38.39455413818359 4.9130859375 L 38.51076507568359 4.9130859375 L 38.51076507568359 13 Z">
+						</path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

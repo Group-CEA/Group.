@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>test</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: 2;
+		--web-view-id: ID2;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: ID2;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	#ID2 {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 375px;
+		height: 812px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		--web-view-name: 2;
+		--web-view-id: ID2;
+		--web-enable-deep-linking: true;
+	}
+	#Elements_Map {
+		position: absolute;
+		width: 375px;
+		height: 812px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_map {
+		position: absolute;
+		width: 375px;
+		height: 812px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Komponente_1___4 {
+		position: absolute;
+		width: 266px;
+		height: 36px;
+		left: 91px;
+		top: 49px;
+		overflow: visible;
+	}
+	.Rechteck_1 {
+		position: absolute;
+		overflow: visible;
+		width: 266px;
+		height: 36px;
+		left: 0px;
+		top: 0px;
+	}
+	.Icon_ionic_ios_search {
+		overflow: visible;
+		position: absolute;
+		top: 7.975px;
+		left: 229px;
+		width: 19.702px;
+		height: 19.884px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Party_ {
+		position: absolute;
+		left: 22px;
+		top: 5px;
+		overflow: visible;
+		width: 43px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 17px;
+		color: rgba(0,0,0,1);
+		text-decoration: true;
+	}
+	#map {
+		position: absolute;
+		width: 222px;
+		height: 375px;
+		left: 72px;
+		top: 224px;
+		overflow: visible;
+	}
+	#mark {
+		position: absolute;
+		width: 62.412px;
+		height: 58px;
+		left: 80px;
+		top: 111px;
+		overflow: visible;
+	}
+	#shadow {
+		opacity: 0.23;
+		position: absolute;
+		width: 40.412px;
+		height: 25.5px;
+		left: 22px;
+		top: 32px;
+		overflow: visible;
+	}
+	#mark_A1_Group_11 {
+		position: absolute;
+		width: 48px;
+		height: 58px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#pins {
+		position: absolute;
+		width: 222px;
+		height: 375px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#pin {
+		filter: drop-shadow(0px 2px 12px rgba(207, 204, 214, 0.6));
+	}
+	.pin {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 48px;
+		left: 0px;
+		top: 41px;
+	}
+	#pin_A1_Rectangle_13 {
+		filter: drop-shadow(0px 2px 12px rgba(207, 204, 214, 0.6));
+	}
+	.pin_A1_Rectangle_13 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 48px;
+		left: 152px;
+		top: 0px;
+	}
+	#pin_A1_Rectangle_14 {
+		filter: drop-shadow(0px 2px 12px rgba(207, 204, 214, 0.6));
+	}
+	.pin_A1_Rectangle_14 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 48px;
+		left: 210px;
+		top: 115px;
+	}
+	#pin_A1_Rectangle_15 {
+		filter: drop-shadow(0px 2px 12px rgba(207, 204, 214, 0.6));
+	}
+	.pin_A1_Rectangle_15 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 48px;
+		left: 113px;
+		top: 218px;
+	}
+	#pin_A1_Rectangle_16 {
+		filter: drop-shadow(0px 2px 12px rgba(207, 204, 214, 0.6));
+	}
+	.pin_A1_Rectangle_16 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 48px;
+		left: 119px;
+		top: 363px;
+	}
+	#pin_A1_Rectangle_17 {
+		filter: drop-shadow(0px 2px 12px rgba(207, 204, 214, 0.6));
+	}
+	.pin_A1_Rectangle_17 {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 48px;
+		left: 192px;
+		top: 169px;
+	}
+	.Rechteck_11 {
+		position: absolute;
+		overflow: visible;
+		width: 32px;
+		height: 45px;
+		left: 161px;
+		top: 336px;
+	}
+	.Rechteck_12 {
+		position: absolute;
+		overflow: visible;
+		width: 152px;
+		height: 127px;
+		left: 199px;
+		top: 600px;
+	}
+	#card_expanded {
+		position: absolute;
+		width: 0px;
+		height: 0px;
+		left: -445px;
+		top: 0px;
+		overflow: visible;
+	}
+	#text {
+		position: absolute;
+		width: 0px;
+		height: 0px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Komponente_13___1 {
+		position: absolute;
+		width: 152px;
+		height: 172px;
+		left: 35px;
+		top: 600px;
+		overflow: visible;
+	}
+	.back_gradient {
+		position: absolute;
+		overflow: visible;
+		width: 152px;
+		height: 157px;
+		left: 0px;
+		top: 0px;
+	}
+	.back {
+		overflow: visible;
+		position: absolute;
+		top: 112px;
+		left: 0px;
+		width: 152px;
+		height: 60px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Perkins_Park {
+		position: absolute;
+		left: 16px;
+		top: 124px;
+		overflow: visible;
+		width: 75px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#ID200_leute___10_Gruppen {
+		opacity: 0.56;
+		position: absolute;
+		left: 17px;
+		top: 141px;
+		overflow: visible;
+		width: 122px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	#card {
+		position: absolute;
+		width: 152px;
+		height: 60px;
+		left: 199px;
+		top: 712px;
+		overflow: visible;
+	}
+	#text_A1_Group_15 {
+		position: absolute;
+		width: 152px;
+		height: 60px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.bg_A1_Rectangle_24 {
+		position: absolute;
+		overflow: visible;
+		width: 152px;
+		height: 60px;
+		left: 0px;
+		top: 0px;
+	}
+	#Pure {
+		position: absolute;
+		left: 16px;
+		top: 12px;
+		overflow: visible;
+		width: 29px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#ID200_leute___10_Gruppen_A1_Text_7 {
+		opacity: 0.56;
+		position: absolute;
+		left: 17px;
+		top: 29px;
+		overflow: visible;
+		width: 122px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	#card_A1_Component_8 {
+		position: absolute;
+		width: 152px;
+		height: 172px;
+		left: 363px;
+		top: 600px;
+		overflow: visible;
+	}
+	#joseph_gonzalez_176749 {
+		filter: drop-shadow(0px 2px 16px rgba(0, 0, 0, 0.18));
+	}
+	.joseph_gonzalez_176749 {
+		position: absolute;
+		overflow: visible;
+		width: 200px;
+		height: 220px;
+		left: 0px;
+		top: 0px;
+	}
+	#text_A1_Group_16 {
+		position: absolute;
+		width: 152px;
+		height: 60px;
+		left: 0px;
+		top: 112px;
+		overflow: visible;
+	}
+	.bg_A1_Rectangle_27 {
+		position: absolute;
+		overflow: visible;
+		width: 152px;
+		height: 60px;
+		left: 0px;
+		top: 0px;
+	}
+	#Penthouse {
+		position: absolute;
+		left: 16px;
+		top: 12px;
+		overflow: visible;
+		width: 66px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#ID200_leute___10_Gruppen_A1_Text_9 {
+		opacity: 0.56;
+		position: absolute;
+		left: 17px;
+		top: 29px;
+		overflow: visible;
+		width: 122px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	#card_A1_Component_9 {
+		position: absolute;
+		width: 152px;
+		height: 172px;
+		left: -129px;
+		top: 600px;
+		overflow: visible;
+	}
+	#kyle_head_465761 {
+		filter: drop-shadow(0px 2px 16px rgba(0, 0, 0, 0.18));
+	}
+	.kyle_head_465761 {
+		position: absolute;
+		overflow: visible;
+		width: 200px;
+		height: 220px;
+		left: 0px;
+		top: 0px;
+	}
+	#text_A1_Group_17 {
+		position: absolute;
+		width: 152px;
+		height: 60px;
+		left: 0px;
+		top: 112px;
+		overflow: visible;
+	}
+	.bg_A1_Rectangle_30 {
+		position: absolute;
+		overflow: visible;
+		width: 152px;
+		height: 60px;
+		left: 0px;
+		top: 0px;
+	}
+	#High_Life {
+		position: absolute;
+		left: 16px;
+		top: 12px;
+		overflow: visible;
+		width: 56px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#ID200_leute___10_Gruppen_A1_Text_11 {
+		opacity: 0.56;
+		position: absolute;
+		left: 17px;
+		top: 29px;
+		overflow: visible;
+		width: 122px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	.bg_A1_Rectangle_31 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 24px;
+		left: 5px;
+		top: 788px;
+	}
+	#Ellipse_2 {
+		filter: drop-shadow(0px 3px 30px rgba(0, 0, 0, 0.259));
+	}
+	.Ellipse_2 {
+		position: absolute;
+		overflow: visible;
+		width: 142px;
+		height: 146px;
+		left: 20px;
+		top: 39px;
+	}
+	#icons_dark_close {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 282px;
+		top: 55px;
+		overflow: visible;
+	}
+	.bg_A1_Rectangle_32 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	.union {
+		overflow: visible;
+		position: absolute;
+		top: 0.686px;
+		left: 0.686px;
+		width: 22.628px;
+		height: 22.628px;
+		transform: rotate(45deg);
+	}
+</style>
+</head>
+<body>
+<div id="ID2">
+	<div id="Elements_Map" class="Elements/Map">
+		<div id="bg_map">
+		<svg style="width:inherit;height:inherit;overflow:visible;">
+			<rect fill="url(#bg_map_A1_Group_18_pattern)" width="100%" height="100%"></rect>
+				<pattern elementId="bg_map_A1_Group_18" id="bg_map_A1_Group_18_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="bg_map_A1_Group_18_pattern.png" xlink:href="bg_map_A1_Group_18_pattern.png"></image>
+				</pattern>
+				</svg>
+			</div>
+	</div>
+	<div id="Komponente_1___4" class="Komponente 1 – 4">
+		<svg class="Rechteck_1">
+			<rect fill="rgba(255,255,255,1)" id="Rechteck_1" rx="18" ry="18" x="0" y="0" width="266" height="36">
+			</rect>
+		</svg>
+		<svg class="Icon_ionic_ios_search" viewBox="4.5 4.493 19.702 19.884">
+			<path fill="rgba(0,0,0,1)" id="Icon_ionic_ios_search" d="M 23.97042274475098 22.93738555908203 L 18.49100112915039 17.35695457458496 C 19.56328582763672 16.00067138671875 20.2097339630127 14.28201961517334 20.2097339630127 12.41324806213379 C 20.2097339630127 8.038976669311523 16.69530868530273 4.492969512939453 12.35486793518066 4.492969512939453 C 8.014424324035645 4.492969512939453 4.5 8.044153213500977 4.5 12.41842365264893 C 4.5 16.79269790649414 8.014424324035645 20.33870506286621 12.35486793518066 20.33870506286621 C 14.23264694213867 20.33870506286621 15.95137977600098 19.67609405517578 17.30584335327148 18.56828880310059 L 22.74935150146484 24.11248588562012 C 22.91353034973145 24.28849220275879 23.13927268981934 24.37649536132813 23.35988807678223 24.37649536132813 C 23.57024002075195 24.37649536132813 23.78059196472168 24.2988452911377 23.93964004516602 24.14354515075684 C 24.27825546264648 23.81741714477539 24.28851699829102 23.27904510498047 23.97042274475098 22.93738555908203 Z M 12.35486793518066 18.63558578491211 C 10.70796203613281 18.63558578491211 9.158536911010742 17.98850440979004 7.993902683258057 16.81340408325195 C 6.829268932342529 15.63830184936523 6.187950611114502 14.07495212554932 6.187950611114502 12.41842365264893 C 6.187950611114502 10.75671768188477 6.829268932342529 9.193367958068848 7.993902683258057 8.023445129394531 C 9.158536911010742 6.848345279693604 10.70796203613281 6.201263904571533 12.35486793518066 6.201263904571533 C 14.0017728805542 6.201263904571533 15.55119800567627 6.848345279693604 16.71582984924316 8.023445129394531 C 17.88046455383301 9.198545455932617 18.52178382873535 10.76189422607422 18.52178382873535 12.41842365264893 C 18.52178382873535 14.08012962341309 17.88046455383301 15.643479347229 16.71582984924316 16.81340408325195 C 15.55119800567627 17.98850440979004 14.0017728805542 18.63558578491211 12.35486793518066 18.63558578491211 Z">
+			</path>
+		</svg>
+		<div id="Party_">
+			<span>Party </span>
+		</div>
+	</div>
+	<div id="map">
+		<div id="mark">
+			<div id="shadow">
+			<svg style="width:inherit;height:inherit;overflow:visible;">
+				<rect fill="url(#shadow_A1_Group_19_pattern)" width="100%" height="100%"></rect>
+					<pattern elementId="shadow_A1_Group_19" id="shadow_A1_Group_19_pattern" x="0" y="0" width="100%" height="100%">
+						<image x="0" y="0" width="100%" height="100%" href="shadow_A1_Group_19_pattern.png" xlink:href="shadow_A1_Group_19_pattern.png"></image>
+					</pattern>
+					</svg>
+				</div>
+			<div id="mark_A1_Group_11">
+			<svg style="width:inherit;height:inherit;overflow:visible;">
+				<rect fill="url(#mark_A1_Group_20_pattern)" width="100%" height="100%"></rect>
+					<pattern elementId="mark_A1_Group_20" id="mark_A1_Group_20_pattern" x="0" y="0" width="100%" height="100%">
+						<image x="0" y="0" width="100%" height="100%" href="mark_A1_Group_20_pattern.png" xlink:href="mark_A1_Group_20_pattern.png"></image>
+					</pattern>
+					</svg>
+				</div>
+		</div>
+		<div id="pins">
+			<svg class="pin">
+				<rect fill="rgba(52,151,253,1)" id="pin" rx="4" ry="4" x="0" y="0" width="12" height="12">
+				</rect>
+			</svg>
+			<svg class="pin_A1_Rectangle_13">
+				<rect fill="rgba(52,151,253,1)" id="pin_A1_Rectangle_13" rx="4" ry="4" x="0" y="0" width="12" height="12">
+				</rect>
+			</svg>
+			<svg class="pin_A1_Rectangle_14">
+				<rect fill="rgba(102,94,255,1)" id="pin_A1_Rectangle_14" rx="4" ry="4" x="0" y="0" width="12" height="12">
+				</rect>
+			</svg>
+			<svg class="pin_A1_Rectangle_15">
+				<rect fill="rgba(102,94,255,1)" id="pin_A1_Rectangle_15" rx="4" ry="4" x="0" y="0" width="12" height="12">
+				</rect>
+			</svg>
+			<svg class="pin_A1_Rectangle_16">
+				<rect fill="rgba(87,115,255,1)" id="pin_A1_Rectangle_16" rx="4" ry="4" x="0" y="0" width="12" height="12">
+				</rect>
+			</svg>
+			<svg class="pin_A1_Rectangle_17">
+				<rect fill="rgba(200,64,233,1)" id="pin_A1_Rectangle_17" rx="4" ry="4" x="0" y="0" width="12" height="12">
+				</rect>
+			</svg>
+		</div>
+	</div>
+	<svg class="Rechteck_11">
+		<pattern elementId="Rechteck_11_A1_Rectangle_19" id="Rechteck_11_A1_Rectangle_19_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="Rechteck_11_A1_Rectangle_19_pattern.png" xlink:href="Rechteck_11_A1_Rectangle_19_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#Rechteck_11_A1_Rectangle_19_pattern)" id="Rechteck_11" rx="0" ry="0" x="0" y="0" width="32" height="45">
+		</rect>
+	</svg>
+	<svg class="Rechteck_12">
+		<pattern elementId="Rechteck_12_A1_Rectangle_21" id="Rechteck_12_A1_Rectangle_21_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="Rechteck_12_A1_Rectangle_21_pattern.png" xlink:href="Rechteck_12_A1_Rectangle_21_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#Rechteck_12_A1_Rectangle_21_pattern)" stroke="rgba(0,0,0,0)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rechteck_12" rx="14" ry="14" x="0" y="0" width="152" height="127">
+		</rect>
+	</svg>
+	<div id="card_expanded">
+		<div id="text">
+		</div>
+	</div>
+	<div id="Komponente_13___1" class="Komponente 13 – 1">
+		<svg class="back_gradient">
+			<pattern elementId="back_gradient_A1_Rectangle_23" id="back_gradient_A1_Rectangle_23_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="0" width="100%" height="100%" href="back_gradient_A1_Rectangle_23_pattern.png" xlink:href="back_gradient_A1_Rectangle_23_pattern.png"></image>
+			</pattern>
+			<rect fill="url(#back_gradient_A1_Rectangle_23_pattern)" id="back_gradient" rx="16" ry="16" x="0" y="0" width="152" height="157">
+			</rect>
+		</svg>
+		<svg class="back" viewBox="0 0 152 60">
+			<path fill="rgba(255,130,130,1)" id="back" d="M 0 0 L 152 0 L 152 52 C 152 56.41827774047852 148.4182739257813 60 144 60 L 8 60 C 3.581721782684326 60 0 56.41827774047852 0 52 L 0 0 Z">
+			</path>
+		</svg>
+		<div id="Perkins_Park">
+			<span>Perkins Park</span>
+		</div>
+		<div id="ID200_leute___10_Gruppen">
+			<span>200 leute , 10 Gruppen</span>
+		</div>
+	</div>
+	<div id="card" class="card">
+		<div id="text_A1_Group_15">
+			<svg class="bg_A1_Rectangle_24">
+				<rect fill="rgba(118,143,255,1)" id="bg_A1_Rectangle_24" rx="0" ry="0" x="0" y="0" width="152" height="60">
+				</rect>
+			</svg>
+			<div id="Pure">
+				<span>Pure</span>
+			</div>
+			<div id="ID200_leute___10_Gruppen_A1_Text_7">
+				<span>200 leute , 10 Gruppen</span>
+			</div>
+		</div>
+	</div>
+	<div id="card_A1_Component_8" class="card">
+		<svg class="joseph_gonzalez_176749">
+			<pattern elementId="joseph_gonzalez_176749_A1_Rectangle_26" id="joseph_gonzalez_176749_A1_Rectangle_26_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="0" width="100%" height="100%" href="joseph_gonzalez_176749_A1_Rectangle_26_pattern.png" xlink:href="joseph_gonzalez_176749_A1_Rectangle_26_pattern.png"></image>
+			</pattern>
+			<rect fill="url(#joseph_gonzalez_176749_A1_Rectangle_26_pattern)" id="joseph_gonzalez_176749" rx="12" ry="12" x="0" y="0" width="152" height="172">
+			</rect>
+		</svg>
+		<div id="text_A1_Group_16">
+			<svg class="bg_A1_Rectangle_27">
+				<rect fill="rgba(118,143,255,1)" id="bg_A1_Rectangle_27" rx="0" ry="0" x="0" y="0" width="152" height="60">
+				</rect>
+			</svg>
+			<div id="Penthouse">
+				<span>Penthouse</span>
+			</div>
+			<div id="ID200_leute___10_Gruppen_A1_Text_9">
+				<span>200 leute , 10 Gruppen</span>
+			</div>
+		</div>
+	</div>
+	<div id="card_A1_Component_9" class="card">
+		<svg class="kyle_head_465761">
+			<pattern elementId="kyle_head_465761_A1_Rectangle_29" id="kyle_head_465761_A1_Rectangle_29_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="0" width="100%" height="100%" href="kyle_head_465761_A1_Rectangle_29_pattern.png" xlink:href="kyle_head_465761_A1_Rectangle_29_pattern.png"></image>
+			</pattern>
+			<rect fill="url(#kyle_head_465761_A1_Rectangle_29_pattern)" id="kyle_head_465761" rx="12" ry="12" x="0" y="0" width="152" height="172">
+			</rect>
+		</svg>
+		<div id="text_A1_Group_17">
+			<svg class="bg_A1_Rectangle_30">
+				<rect fill="rgba(118,143,255,1)" id="bg_A1_Rectangle_30" rx="0" ry="0" x="0" y="0" width="152" height="60">
+				</rect>
+			</svg>
+			<div id="High_Life">
+				<span>High Life</span>
+			</div>
+			<div id="ID200_leute___10_Gruppen_A1_Text_11">
+				<span>200 leute , 10 Gruppen</span>
+			</div>
+		</div>
+	</div>
+	<svg class="bg_A1_Rectangle_31">
+		<rect fill="transparent" id="bg_A1_Rectangle_31" rx="0" ry="0" x="0" y="0" width="375" height="24">
+		</rect>
+	</svg>
+	<svg class="Ellipse_2">
+		<pattern elementId="Ellipse_2_A1_Ellipse_4" id="Ellipse_2_A1_Ellipse_4_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="Ellipse_2_A1_Ellipse_4_pattern.png" xlink:href="Ellipse_2_A1_Ellipse_4_pattern.png"></image>
+		</pattern>
+		<ellipse fill="url(#Ellipse_2_A1_Ellipse_4_pattern)" id="Ellipse_2" rx="26" ry="28" cx="26" cy="28">
+		</ellipse>
+	</svg>
+	<div id="icons_dark_close" class="icons/dark/close">
+		<svg class="bg_A1_Rectangle_32">
+			<rect fill="transparent" id="bg_A1_Rectangle_32" rx="0" ry="0" x="0" y="0" width="24" height="24">
+			</rect>
+		</svg>
+		<svg class="union" viewBox="1477 658.15 16 16">
+			<path fill="rgba(69,79,99,1)" id="union" d="M 1484.250366210938 673.3998413085938 L 1484.250366210938 666.9000244140625 L 1477.749633789063 666.9000244140625 C 1477.335693359375 666.9000244140625 1476.999877929688 666.5643310546875 1476.999877929688 666.1503295898438 C 1476.999877929688 665.7354125976563 1477.335693359375 665.3997192382813 1477.749633789063 665.3997192382813 L 1484.250366210938 665.3997192382813 L 1484.250366210938 658.89990234375 C 1484.250366210938 658.4859008789063 1484.586059570313 658.1502075195313 1485 658.1502075195313 C 1485.4140625 658.1502075195313 1485.749755859375 658.4859008789063 1485.749755859375 658.89990234375 L 1485.749755859375 665.3997192382813 L 1492.25048828125 665.3997192382813 C 1492.664428710938 665.3997192382813 1493.000122070313 665.7354125976563 1493.000122070313 666.1503295898438 C 1493.000122070313 666.5643310546875 1492.664428710938 666.9000244140625 1492.25048828125 666.9000244140625 L 1485.749755859375 666.9000244140625 L 1485.749755859375 673.3998413085938 C 1485.749755859375 673.8138427734375 1485.4140625 674.150390625 1485 674.150390625 C 1484.586059570313 674.150390625 1484.250366210938 673.8138427734375 1484.250366210938 673.3998413085938 Z">
+			</path>
+		</svg>
+	</div>
+</div>
+</body>
+</html>
