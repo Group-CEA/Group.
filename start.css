@@ -1,0 +1,224 @@
+	.mediaViewInfo {
+		--web-view-name: start;
+		--web-view-id: start;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: start;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	#start {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 375px;
+		height: 812px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		--web-view-name: start;
+		--web-view-id: start;
+		--web-enable-deep-linking: true;
+	}
+	#Elements_Map {
+		position: absolute;
+		width: 375px;
+		height: 812px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_map {
+		position: absolute;
+		width: 375px;
+		height: 812px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Komponente_1___1 {
+		position: absolute;
+		width: 328px;
+		height: 45px;
+		left: 24px;
+		top: 53px;
+		overflow: visible;
+	}
+	.Rechteck_1 {
+		position: absolute;
+		overflow: visible;
+		width: 328px;
+		height: 45px;
+		left: 0px;
+		top: 0px;
+	}
+	.Icon_ionic_ios_search {
+		overflow: visible;
+		position: absolute;
+		top: 12.429px;
+		left: 291px;
+		width: 19.702px;
+		height: 19.884px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Was_willst_du_machen {
+		position: absolute;
+		left: 22px;
+		top: 9px;
+		overflow: visible;
+		width: 161px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 17px;
+		color: rgba(112,112,112,1);
+		text-decoration: true;
+	}
+	#button_fab_filters {
+		position: absolute;
+		width: 100px;
+		height: 52px;
+		left: 252px;
+		top: 647px;
+		overflow: visible;
+	}
+	#bg_A0_Rectangle_3 {
+		filter: drop-shadow(0px 12px 16px rgba(69, 91, 99, 0.102));
+	}
+	.bg_A0_Rectangle_3 {
+		position: absolute;
+		overflow: visible;
+		width: 148px;
+		height: 100px;
+		left: 0px;
+		top: 0px;
+	}
+	#icons_setting {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 38px;
+		top: 14px;
+		overflow: visible;
+	}
+	.bg_A0_Rectangle_4 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	.path {
+		overflow: visible;
+		position: absolute;
+		top: 4px;
+		left: 4px;
+		width: 16px;
+		height: 16px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#button_fab_gps {
+		position: absolute;
+		width: 100px;
+		height: 52px;
+		left: 252px;
+		top: 719px;
+		overflow: visible;
+	}
+	#bg_A0_Rectangle_5 {
+		filter: drop-shadow(0px 12px 16px rgba(69, 91, 99, 0.102));
+	}
+	.bg_A0_Rectangle_5 {
+		position: absolute;
+		overflow: visible;
+		width: 148px;
+		height: 100px;
+		left: 0px;
+		top: 0px;
+	}
+	#icons_gps {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 38px;
+		top: 14px;
+		overflow: visible;
+	}
+	.bg_A0_Rectangle_6 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	.path_A0_Path_5 {
+		overflow: visible;
+		position: absolute;
+		top: 3px;
+		left: 3px;
+		width: 18px;
+		height: 18px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Komponente_1___2 {
+		position: absolute;
+		width: 328px;
+		height: 45px;
+		left: 24px;
+		top: 53px;
+		overflow: visible;
+	}
+	.Rechteck_1_A0_Rectangle_7 {
+		position: absolute;
+		overflow: visible;
+		width: 328px;
+		height: 45px;
+		left: 0px;
+		top: 0px;
+	}
+	.Icon_ionic_ios_search_A0_Path_6 {
+		overflow: visible;
+		position: absolute;
+		top: 12.429px;
+		left: 291px;
+		width: 19.702px;
+		height: 19.884px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Was_willst_du_machen_A0_Text_2 {
+		position: absolute;
+		left: 22px;
+		top: 9px;
+		overflow: visible;
+		width: 161px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 17px;
+		color: rgba(112,112,112,1);
+		text-decoration: true;
+	}
+	#Ellipse_2 {
+		filter: drop-shadow(0px 3px 30px rgba(0, 0, 0, 0.259));
+	}
+	.Ellipse_2 {
+		position: absolute;
+		overflow: visible;
+		width: 177px;
+		height: 181px;
+		left: 24px;
+		top: 680px;
+	}
+
+
+[object Promise]
