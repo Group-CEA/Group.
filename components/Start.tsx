@@ -5,57 +5,69 @@ import { Avatar } from "react-native-elements";
 import { SearchBar } from "react-native-elements";
 import { Icon } from "react-native-elements";
 
-const start = props => {
-  return (
-    <View style={styles.container}>
-      <MapView
-        provider={PROVIDER_GOOGLE} // remove if not using Google Maps
-        style={styles.map}
-        region={{
-          latitude: 37.78825,
-          longitude: -122.4324,
-          latitudeDelta: 0.015,
-          longitudeDelta: 0.0121
-        }}
-      ></MapView>
-      <View style={styles.searchbar}>
-        <SearchBar
-          lightTheme
-          round
-          placeholder="Was möchten Sie tun?"
-          onChangeText={props.updateSearch}
-          value={props.search}
-        />
+export default class StartScreen extends React.Component {
+  state = {
+    search: ""
+  };
+
+  updateSearch = search => {
+    this.setState({ search });
+    console.log("Searchbar");
+  };
+
+  render() {
+    const { search } = this.state;
+    return (
+      <View style={styles.container}>
+        <MapView
+          provider={PROVIDER_GOOGLE} // remove if not using Google Maps
+          style={styles.map}
+          region={{
+            latitude: 37.78825,
+            longitude: -122.4324,
+            latitudeDelta: 0.015,
+            longitudeDelta: 0.0121
+          }}
+        ></MapView>
+        <View style={styles.searchbar}>
+          <SearchBar
+            lightTheme
+            round
+            placeholder="Was möchten Sie tun?"
+            onChangeText={this.updateSearch}
+            value={search}
+          />
+        </View>
+        <View style={styles.profile}>
+          <Avatar
+            size={80}
+            rounded
+            onPress={() => console.log("Profile")}
+            activeOpacity={0.7}
+            source={require("../assets/avatar.png")} // Quelle: https://de.cleanpng.com/png-2sre9w/
+            imageProps={{ resizeMode: "cover" }}
+          />
+        </View>
+        <View style={styles.settings}>
+          <Icon
+            raised
+            name="sliders"
+            type="font-awesome"
+            onPress={() => console.log("Settings")}
+          />
+        </View>
+        <View style={styles.gps}>
+          <Icon
+            raised
+            name="location-arrow"
+            type="font-awesome"
+            onPress={() => console.log("GPS")}
+          />
+        </View>
       </View>
-      <View style={styles.profile}>
-        <Avatar
-          size={80}
-          rounded
-          onPress={() => console.log("Profile")}
-          activeOpacity={0.7}
-          source={require("../assets/avatar.png")} // Quelle: https://de.cleanpng.com/png-2sre9w/
-          imageProps={{ resizeMode: "cover" }}
-        />
-      </View>
-      <View style={styles.settings}>
-        <Icon
-          raised
-          name="sliders"
-          type="font-awesome"
-          onPress={() => console.log("Settings")}
-        />
-      </View>
-      <View style={styles.gps}>
-        <Icon
-          raised
-          name="location-arrow"
-          type="font-awesome"
-          onPress={() => console.log("GPS")}
-        />
-      </View>
-    </View>
-  );
-};
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -80,9 +92,7 @@ const styles = StyleSheet.create({
   },
   searchbar: {
     left: 0,
-    top: -400,
+    top: -330,
     width: 300
   }
 });
-
-export default start;
