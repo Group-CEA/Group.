@@ -1,13 +1,13 @@
-### Installation
+# Installation
 ```
 yarn install
 expo start (benötigt einen Emulator oder ein physisches Gerät)
 ```
 
-### Vorschaubilder
+# Vorschaubilder
 
-# Startseite
+### Startseite
 ![Startseite](./Vorschaubilder/Startseite.png "Startseite")
 
-# Platzseite
+### Platzseite
 ![Platzseite](./Vorschaubilder/Platzseite.png "Platzseite")
