@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   AppRegistry,
   StyleSheet,
@@ -27,7 +27,7 @@ const SCREEN_WIDTH = width
 const CARD_HEIGHT = height / 4;
 const CARD_WIDTH = CARD_HEIGHT - 50;
 
-export default class Place extends Component {
+export default class Place extends React.Component {
   map: any;
   regionTimeout: number;
   constructor(props) {
