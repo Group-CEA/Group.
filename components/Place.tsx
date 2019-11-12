@@ -32,8 +32,6 @@ export default class Place extends React.Component {
   regionTimeout: number;
   constructor(props) {
 		super(props)
-
-		
 	}
 
   state = {

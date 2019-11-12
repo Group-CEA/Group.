@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from "react-navigation-tabs";
 import Icon from "react-native-vector-icons/FontAwesome";
 import StartPage from "./components/Start";
 import Place from "./components/Place";
+import { AppRegistry } from "react-native";
 
 const TabNavigator = createBottomTabNavigator(
   {
@@ -38,6 +39,7 @@ const TabNavigator = createBottomTabNavigator(
   }
 );
 const AppContainer = createAppContainer(TabNavigator);
+AppRegistry.registerComponent('App', () => App);
 
 export default class App extends React.Component {
   render() {

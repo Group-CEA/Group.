@@ -15,6 +15,11 @@ export default class StartScreen extends React.Component {
     console.log("Searchbar");
   };
 
+  placeSearch = search => {
+    this.props.navigation.navigate("Settings", this.updateSearch.bind(this));
+    console.log(this.state.search)
+  }
+
   render() {
     const { search } = this.state;
     return (
@@ -34,7 +39,9 @@ export default class StartScreen extends React.Component {
             lightTheme
             round
             placeholder="Was möchten Sie tun?"
+            returnKeyType = "search"
             onChangeText={this.updateSearch}
+            onSubmitEditing={this.placeSearch}
             value={search}
           />
         </View>
