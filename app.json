@@ -10,7 +10,12 @@
       "web"
     ],
     "android": {
-      "package": "com.groupcea.groupdot"
+      "package": "com.groupcea.groupdot",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBT6fuD1ioGD4v6qyC2DGUXG-tG58ANysM"
+        }
+      }
     },
     "ios": {
       "bundleIdentifier": "com.groupcea.groupdot",

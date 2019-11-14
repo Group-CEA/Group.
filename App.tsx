@@ -39,7 +39,7 @@ const TabNavigator = createBottomTabNavigator(
   }
 );
 const AppContainer = createAppContainer(TabNavigator);
-AppRegistry.registerComponent('App', () => App);
+AppRegistry.registerComponent('group', () => App);
 
 export default class App extends React.Component {
   render() {
