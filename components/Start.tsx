@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, AppRegistry } from "react-native";
 import MapView, { PROVIDER_GOOGLE } from "react-native-maps"; // remove PROVIDER_GOOGLE import if not using Google Maps
 import { Avatar } from "react-native-elements";
 import { SearchBar } from "react-native-elements";
@@ -103,3 +103,5 @@ const styles = StyleSheet.create({
     width: 300
   }
 });
+
+AppRegistry.registerComponent("group", () => StartScreen);

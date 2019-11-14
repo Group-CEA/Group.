@@ -310,4 +310,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent("mapfocus", () => Place);
+AppRegistry.registerComponent("group", () => Place);
