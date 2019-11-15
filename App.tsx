@@ -6,25 +6,24 @@ import StartPage from "./components/Start";
 import Place from "./components/Place";
 import { AppRegistry } from "react-native";
 
-import * as firebase from 'firebase'
-import 'firebase/firestore'
-import firebaseConfig from "./config/Firebase"
+import * as firebase from "firebase";
+import "firebase/firestore";
+import firebaseConfig from "./config/Firebase";
 
-import { createStore, applyMiddleware } from 'redux'
-import { Provider } from 'react-redux'
-import thunkMiddleware from 'redux-thunk'
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import thunkMiddleware from "redux-thunk";
 
-import SwitchNavigator from './navigation/SwitchNavigator'
-import reducer from './reducers'
+import SwitchNavigator from "./navigation/SwitchNavigator";
+import reducer from "./reducers";
 
-const middleware = applyMiddleware(thunkMiddleware)
-const store = createStore(reducer, middleware)
+const middleware = applyMiddleware(thunkMiddleware);
+const store = createStore(reducer, middleware);
 
 // Initialize Firebase
 //firebase.initializeApp(firebaseConfig);
 //const db = firebase.firestore()
 //db.collection('user').add({ name: "test" })
-
 
 const TabNavigator = createBottomTabNavigator(
   {
@@ -56,21 +55,18 @@ const TabNavigator = createBottomTabNavigator(
         backgroundColor: "white"
       }
     }
-    
-  },
-  
-  
+  }
 );
 const AppContainer = createAppContainer(TabNavigator);
-AppRegistry.registerComponent('group', () => App);
+AppRegistry.registerComponent("group", () => App);
 
 export default class App extends React.Component {
   render() {
-    //return (<AppContainer />)
+    // return (<AppContainer />)
     return (
-            <Provider store={store}>
-                <SwitchNavigator />
-            </Provider>
-        )
+      <Provider store={store}>
+        <SwitchNavigator />
+      </Provider>
+    );
   }
 }
