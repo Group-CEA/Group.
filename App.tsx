@@ -1,10 +1,30 @@
 import React from "react";
-import { createAppContainer } from "react-navigation";
+import { createAppContainer, createSwitchNavigator } from "react-navigation";
 import { createBottomTabNavigator } from "react-navigation-tabs";
 import Icon from "react-native-vector-icons/FontAwesome";
 import StartPage from "./components/Start";
 import Place from "./components/Place";
 import { AppRegistry } from "react-native";
+
+import * as firebase from 'firebase'
+import 'firebase/firestore'
+import firebaseConfig from "./config/Firebase"
+
+import { createStore, applyMiddleware } from 'redux'
+import { Provider } from 'react-redux'
+import thunkMiddleware from 'redux-thunk'
+
+import SwitchNavigator from './navigation/SwitchNavigator'
+import reducer from './reducers'
+
+const middleware = applyMiddleware(thunkMiddleware)
+const store = createStore(reducer, middleware)
+
+// Initialize Firebase
+//firebase.initializeApp(firebaseConfig);
+//const db = firebase.firestore()
+//db.collection('user').add({ name: "test" })
+
 
 const TabNavigator = createBottomTabNavigator(
   {
@@ -36,13 +56,21 @@ const TabNavigator = createBottomTabNavigator(
         backgroundColor: "white"
       }
     }
-  }
+    
+  },
+  
+  
 );
 const AppContainer = createAppContainer(TabNavigator);
 AppRegistry.registerComponent('App', () => App);
 
 export default class App extends React.Component {
   render() {
-    return <AppContainer />;
+    //return (<AppContainer />)
+    return (
+            <Provider store={store}>
+                <SwitchNavigator />
+            </Provider>
+        )
   }
 }
