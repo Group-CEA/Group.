@@ -7,7 +7,7 @@ import { updateEmail, updatePassword, signup } from '../actions/user'
 class Signup extends React.Component {
     handleSignUp = () => {
         this.props.signup()
-        this.props.navigation.navigate('Profile')
+        this.props.navigation.navigate('TabNavigator')
     }
 
     render() {
