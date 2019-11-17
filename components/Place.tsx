@@ -186,7 +186,7 @@ export default class Place extends React.Component {
           <Avatar 
               size={60}
               rounded
-              onPress={() => console.log("Profile")}
+              onPress={() => this.props.navigation.navigate('Profile')}
               activeOpacity={0.7}
               source={require('../assets/avatar.png')} // Quelle: https://de.cleanpng.com/png-2sre9w/
               imageProps={{resizeMode: 'cover'}}

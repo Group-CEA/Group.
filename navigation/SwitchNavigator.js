@@ -3,6 +3,8 @@ import { createSwitchNavigator, createAppContainer } from 'react-navigation'
 import Login from '../screens/Login'
 import Signup from '../screens/Signup'
 import Profile from '../screens/Profile'
+import Start from '../components/Start'
+import TabNavigator from './TabNavigator'
 
 const SwitchNavigator = createSwitchNavigator(
     {
@@ -14,6 +16,10 @@ const SwitchNavigator = createSwitchNavigator(
         },
         Profile: {
             screen: Profile
+        },
+        TabNavigator: 
+        {
+            screen: TabNavigator
         }
     },
     {
