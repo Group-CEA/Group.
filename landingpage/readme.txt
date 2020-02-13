@@ -1,3 +1,6 @@
+Index Html file is the landing page. Credit on Colorlib.com
+
+
 Thank you for using our template!
 
 For more awesome templates please visit https://colorlib.com/wp/templates/
